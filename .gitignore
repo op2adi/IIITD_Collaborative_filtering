@@ -1,1 +1,17 @@
-.venv
+# Python virtual environment
+.venv/
+
+# Model and cache directories
+Assignment_2/submission/fold_cache1/
+Assignment_2/submission/saved_models/
+
+# Optional: ignore all common ML model files
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pkl
+*.joblib
+.venv/
+Assignment_2/submission/fold_cache1/
+Assignment_2/submission/saved_models/

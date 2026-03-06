@@ -1,0 +1,1001 @@
+2026-02-18 08:09:05,075 INFO NUM_THREADS=8
+2026-02-18 08:09:05,087 INFO XGBoost available
+2026-02-18 08:09:05,146 INFO LightGBM available
+2026-02-18 08:09:05,311 INFO CatBoost available
+2026-02-18 08:09:06,852 INFO TensorFlow available
+2026-02-18 08:09:07,201 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 08:09:07,202 INFO ===== FOLD 1 =====
+2026-02-18 08:09:12,879 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 08:09:12,879 INFO Building features for fold 1 (train-only SVD; no external metadata)
+2026-02-18 08:09:20,325 INFO Cached preprocessed arrays to fold_cache1/X_train_fold1.joblib ...
+2026-02-18 08:09:20,325 INFO [Logistic] starting fit (fold 1)
+2026-02-18 08:10:24,980 INFO [Logistic] finished fit in 64.7s
+2026-02-18 08:10:24,995 INFO Logistic        acc=0.4326 f1=0.3704 total_time=64.7s
+2026-02-18 08:10:25,007 INFO [SGD_Log] starting fit (fold 1)
+2026-02-18 08:10:30,698 INFO [SGD_Log] finished fit in 5.7s
+2026-02-18 08:10:30,712 INFO SGD_Log         acc=0.4123 f1=0.3471 total_time=5.7s
+2026-02-18 08:10:30,738 INFO [ComplementNB] starting fit (fold 1)
+2026-02-18 08:10:30,791 INFO [ComplementNB] finished fit in 0.1s
+2026-02-18 08:10:30,804 INFO ComplementNB    acc=0.2889 f1=0.1914 total_time=0.1s
+2026-02-18 08:10:30,816 INFO [KNN] starting fit (fold 1)
+2026-02-18 08:10:35,227 INFO [KNN] finished fit in 4.4s
+2026-02-18 08:10:35,237 INFO KNN             acc=0.3531 f1=0.3354 total_time=4.4s
+2026-02-18 08:10:35,271 INFO [LinearSVC] starting fit (fold 1)
+2026-02-18 08:10:50,922 INFO [LinearSVC] finished fit in 15.7s
+2026-02-18 08:10:50,935 INFO LinearSVC       acc=0.4259 f1=0.3353 total_time=15.7s
+2026-02-18 08:10:50,947 INFO Starting tuning for RandomForest (trials=8, cv=2)
+2026-02-18 08:11:45,466 INFO [optuna:RandomForest] trial 0 mean_score=0.4039 time=54.5s params={'n_estimators': 150, 'max_depth': None, 'max_features': 0.6, 'min_samples_split': 4}
+2026-02-18 08:12:41,048 INFO [optuna:RandomForest] trial 1 mean_score=0.4034 time=55.6s params={'n_estimators': 150, 'max_depth': None, 'max_features': 0.6, 'min_samples_split': 2}
+2026-02-18 08:13:21,211 INFO [optuna:RandomForest] trial 2 mean_score=0.3996 time=40.2s params={'n_estimators': 100, 'max_depth': 25, 'max_features': 0.6, 'min_samples_split': 2}
+2026-02-18 08:13:24,688 INFO [optuna:RandomForest] trial 3 mean_score=0.3575 time=3.5s params={'n_estimators': 100, 'max_depth': 10, 'max_features': 'sqrt', 'min_samples_split': 2}
+2026-02-18 08:14:21,203 INFO [optuna:RandomForest] trial 4 mean_score=0.4034 time=56.5s params={'n_estimators': 150, 'max_depth': None, 'max_features': 0.6, 'min_samples_split': 2}
+2026-02-18 08:14:59,068 INFO [optuna:RandomForest] trial 5 mean_score=0.4004 time=37.9s params={'n_estimators': 100, 'max_depth': 25, 'max_features': 0.6, 'min_samples_split': 4}
+2026-02-18 08:16:13,208 INFO [optuna:RandomForest] trial 6 mean_score=0.4047 time=74.1s params={'n_estimators': 200, 'max_depth': 25, 'max_features': 0.6, 'min_samples_split': 4}
+2026-02-18 08:16:19,831 INFO [optuna:RandomForest] trial 7 mean_score=0.3981 time=6.6s params={'n_estimators': 100, 'max_depth': None, 'max_features': 'sqrt', 'min_samples_split': 2}
+2026-02-18 08:16:19,832 INFO Optuna best for RandomForest: score=0.4047 params={'n_estimators': 200, 'max_depth': 25, 'max_features': 0.6, 'min_samples_split': 4}
+2026-02-18 08:16:19,833 INFO [RandomForest] starting fit (fold 1)
+2026-02-18 08:17:39,030 INFO [RandomForest] finished fit in 79.2s
+2026-02-18 08:17:39,041 INFO RandomForest    acc=0.4486 f1=0.4102 total_time=408.1s
+2026-02-18 08:17:39,470 INFO [ExtraTrees] starting fit (fold 1)
+2026-02-18 08:17:44,461 INFO [ExtraTrees] finished fit in 5.0s
+2026-02-18 08:17:44,475 INFO ExtraTrees      acc=0.4440 f1=0.3980 total_time=5.0s
+2026-02-18 08:17:45,310 INFO Starting tuning for HistGB (trials=8, cv=2)
+2026-02-18 08:42:16,796 INFO NUM_THREADS=8
+2026-02-18 08:42:16,807 INFO XGBoost available
+2026-02-18 08:42:16,866 INFO LightGBM available
+2026-02-18 08:42:17,030 INFO CatBoost available
+2026-02-18 08:42:18,581 INFO TensorFlow available
+2026-02-18 08:42:18,938 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 08:42:18,938 INFO ===== FOLD 1 =====
+2026-02-18 08:42:24,708 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 08:42:24,708 INFO Loading cached arrays for fold 1
+2026-02-18 08:44:34,871 INFO NUM_THREADS=8
+2026-02-18 08:44:34,882 INFO XGBoost available
+2026-02-18 08:44:34,941 INFO LightGBM available
+2026-02-18 08:44:35,105 INFO CatBoost available
+2026-02-18 08:44:36,649 INFO TensorFlow available
+2026-02-18 08:44:36,995 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 08:44:36,996 INFO ===== FOLD 1 =====
+2026-02-18 08:44:42,686 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 08:44:42,686 INFO Loading cached arrays for fold 1
+2026-02-18 08:45:05,215 INFO NUM_THREADS=8
+2026-02-18 08:45:05,226 INFO XGBoost available
+2026-02-18 08:45:05,285 INFO LightGBM available
+2026-02-18 08:45:05,447 INFO CatBoost available
+2026-02-18 08:45:06,991 INFO TensorFlow available
+2026-02-18 08:45:07,347 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 08:45:07,347 INFO ===== FOLD 1 =====
+2026-02-18 08:45:13,008 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 08:45:13,008 INFO Loading cached arrays for fold 1
+2026-02-18 08:47:22,172 INFO NUM_THREADS=8
+2026-02-18 08:47:22,183 INFO XGBoost available
+2026-02-18 08:47:22,243 INFO LightGBM available
+2026-02-18 08:47:22,407 INFO CatBoost available
+2026-02-18 08:47:23,955 INFO TensorFlow available
+2026-02-18 08:47:24,315 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 08:47:24,315 INFO ===== FOLD 1 =====
+2026-02-18 08:47:30,206 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 08:47:30,206 INFO Loading cached arrays for fold 1
+2026-02-18 08:47:42,594 INFO NUM_THREADS=8
+2026-02-18 08:47:42,605 INFO XGBoost available
+2026-02-18 08:47:42,665 INFO LightGBM available
+2026-02-18 08:47:42,829 INFO CatBoost available
+2026-02-18 08:47:44,372 INFO TensorFlow available
+2026-02-18 08:47:44,724 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 08:47:44,725 INFO ===== FOLD 1 =====
+2026-02-18 08:47:50,387 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 08:47:50,387 INFO Loading cached arrays for fold 1
+2026-02-18 08:47:50,430 INFO Starting tuning for HistGB (trials=8, cv=2)
+2026-02-18 08:50:54,758 INFO NUM_THREADS=8
+2026-02-18 08:50:54,769 INFO XGBoost available
+2026-02-18 08:50:54,828 INFO LightGBM available
+2026-02-18 08:50:54,995 INFO CatBoost available
+2026-02-18 08:50:56,531 INFO TensorFlow available
+2026-02-18 08:50:56,887 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 08:50:56,887 INFO ===== FOLD 1 =====
+2026-02-18 08:51:02,673 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 08:51:02,673 INFO Loading cached arrays for fold 1
+2026-02-18 08:51:02,716 INFO Starting tuning for HistGB (trials=8, cv=2)
+2026-02-18 08:55:49,318 INFO NUM_THREADS=8
+2026-02-18 08:55:49,329 INFO XGBoost available
+2026-02-18 08:55:49,389 INFO LightGBM available
+2026-02-18 08:55:49,553 INFO CatBoost available
+2026-02-18 08:55:51,110 INFO TensorFlow available
+2026-02-18 08:55:51,467 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 08:55:51,468 INFO ===== FOLD 1 =====
+2026-02-18 08:55:57,241 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 08:55:57,241 INFO Loading cached arrays for fold 1
+2026-02-18 08:55:57,284 INFO Starting tuning for HistGB (trials=8, cv=2)
+2026-02-18 08:56:37,643 INFO NUM_THREADS=8
+2026-02-18 08:56:37,654 INFO XGBoost available
+2026-02-18 08:56:37,714 INFO LightGBM available
+2026-02-18 08:56:37,877 INFO CatBoost available
+2026-02-18 08:56:39,418 INFO TensorFlow available
+2026-02-18 08:56:39,769 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 08:56:39,769 INFO ===== FOLD 1 =====
+2026-02-18 08:56:45,497 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 08:56:45,497 INFO Loading cached arrays for fold 1
+2026-02-18 08:56:45,540 INFO Starting tuning for HistGB (trials=8, cv=2)
+2026-02-18 09:26:05,660 INFO [optuna:HistGB] trial 0 mean_score=0.4074 time=1760.1s params={'C': 0.37454637344617403}
+2026-02-18 09:55:35,519 INFO [optuna:HistGB] trial 1 mean_score=0.4074 time=1769.9s params={'C': 0.9507147992668521}
+2026-02-18 10:25:04,242 INFO [optuna:HistGB] trial 2 mean_score=0.4074 time=1768.7s params={'C': 0.731996621871987}
+2026-02-18 10:35:21,024 INFO NUM_THREADS=8
+2026-02-18 10:35:21,036 INFO XGBoost available
+2026-02-18 10:35:21,098 INFO LightGBM available
+2026-02-18 10:35:21,264 INFO CatBoost available
+2026-02-18 10:35:22,823 INFO TensorFlow available
+2026-02-18 10:35:23,175 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 10:35:23,175 INFO ===== FOLD 1 =====
+2026-02-18 10:35:28,889 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 10:35:28,889 INFO Loading cached arrays for fold 1
+2026-02-18 10:35:28,932 INFO Starting tuning for HistGB (trials=8, cv=2)
+2026-02-18 10:36:22,639 INFO NUM_THREADS=8
+2026-02-18 10:36:22,650 INFO XGBoost available
+2026-02-18 10:36:22,710 INFO LightGBM available
+2026-02-18 10:36:22,874 INFO CatBoost available
+2026-02-18 10:36:24,431 INFO TensorFlow available
+2026-02-18 10:36:24,784 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 10:36:24,785 INFO ===== FOLD 1 =====
+2026-02-18 10:36:30,518 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 10:36:30,518 INFO Loading cached arrays for fold 1
+2026-02-18 10:36:30,561 INFO [Logistic] starting fit (fold 1)
+2026-02-18 10:37:35,897 INFO [Logistic] finished fit in 65.3s
+2026-02-18 10:37:35,913 INFO Logistic        acc=0.4326 f1=0.3704 total_time=65.4s
+2026-02-18 10:37:35,926 INFO [SGD_Log] starting fit (fold 1)
+2026-02-18 10:37:41,582 INFO [SGD_Log] finished fit in 5.7s
+2026-02-18 10:37:41,607 INFO SGD_Log         acc=0.4123 f1=0.3471 total_time=5.7s
+2026-02-18 10:37:41,631 INFO [ComplementNB] starting fit (fold 1)
+2026-02-18 10:37:41,685 INFO [ComplementNB] finished fit in 0.1s
+2026-02-18 10:37:41,697 INFO ComplementNB    acc=0.2889 f1=0.1914 total_time=0.1s
+2026-02-18 10:37:41,710 INFO [KNN] starting fit (fold 1)
+2026-02-18 10:37:46,056 INFO [KNN] finished fit in 4.3s
+2026-02-18 10:37:46,067 INFO KNN             acc=0.3531 f1=0.3354 total_time=4.4s
+2026-02-18 10:37:46,207 INFO [LinearSVC] starting fit (fold 1)
+2026-02-18 10:38:01,221 INFO [LinearSVC] finished fit in 15.0s
+2026-02-18 10:38:01,233 INFO LinearSVC       acc=0.4259 f1=0.3353 total_time=15.0s
+2026-02-18 10:38:01,245 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 10:38:01,246 INFO [RandomForest] starting fit (fold 1)
+2026-02-18 10:39:20,867 INFO [RandomForest] finished fit in 79.6s
+2026-02-18 10:39:20,881 INFO RandomForest    acc=0.4486 f1=0.4102 total_time=79.6s
+2026-02-18 10:39:23,654 INFO [ExtraTrees] starting fit (fold 1)
+2026-02-18 10:39:28,721 INFO [ExtraTrees] finished fit in 5.1s
+2026-02-18 10:39:28,735 INFO ExtraTrees      acc=0.4440 f1=0.3980 total_time=5.1s
+2026-02-18 10:39:35,807 INFO [MLP] starting fit (fold 1)
+2026-02-18 10:43:54,021 INFO [MLP] finished fit in 258.2s
+2026-02-18 10:43:54,035 INFO MLP             acc=0.3482 f1=0.3365 total_time=258.3s
+2026-02-18 10:43:54,057 INFO Starting tuning for XGBoost (trials=8, cv=2)
+2026-02-18 10:43:54,490 ERROR Tuning failed for XGBoost: 
+All the 2 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/sklearn.py", line 1559, in fit
+    raise ValueError(
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [0 1 2 3 4], got [1 2 3 4 5]
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 521, in run_all
+    best_params = tune_model(name, estimator, X_train, y_train, n_trials=TUNING_TRIALS, cv=TUNING_CV, n_jobs=TUNER_N_JOBS)
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 339, in tune_model
+    study.optimize(optuna_obj, n_trials=n_trials, n_jobs=1)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/study.py", line 490, in optimize
+    _optimize(
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 68, in _optimize
+    _optimize_sequential(
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 263, in _run_trial
+    raise func_err
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 334, in optuna_obj
+    scores = cross_val_score(est, X, y, cv=cv, scoring='accuracy', n_jobs=1)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 684, in cross_val_score
+    cv_results = cross_validate(
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 431, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 2 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/sklearn.py", line 1559, in fit
+    raise ValueError(
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [0 1 2 3 4], got [1 2 3 4 5]
+
+2026-02-18 10:43:54,491 INFO [XGBoost] starting fit (fold 1)
+2026-02-18 10:44:02,180 INFO [XGBoost] finished fit in 7.7s
+2026-02-18 10:44:02,191 INFO XGBoost         acc=0.4443 f1=0.4102 total_time=8.1s
+2026-02-18 10:44:02,208 INFO Starting tuning for LightGBM (trials=8, cv=2)
+2026-02-18 10:44:08,061 INFO [optuna:LightGBM] trial 0 mean_score=0.4061 time=5.9s params={'num_leaves': 50, 'n_estimators': 100, 'max_depth': 8, 'learning_rate': 0.05}
+2026-02-18 10:44:16,756 INFO [optuna:LightGBM] trial 1 mean_score=0.4051 time=8.7s params={'num_leaves': 31, 'n_estimators': 200, 'max_depth': -1, 'learning_rate': 0.05}
+2026-02-18 10:44:24,578 INFO [optuna:LightGBM] trial 2 mean_score=0.4036 time=7.8s params={'num_leaves': 80, 'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.05}
+2026-02-18 10:44:34,905 INFO [optuna:LightGBM] trial 3 mean_score=0.3961 time=10.3s params={'num_leaves': 50, 'n_estimators': 200, 'max_depth': 12, 'learning_rate': 0.1}
+2026-02-18 10:44:43,493 INFO [optuna:LightGBM] trial 4 mean_score=0.4041 time=8.6s params={'num_leaves': 50, 'n_estimators': 150, 'max_depth': -1, 'learning_rate': 0.05}
+2026-02-18 10:44:51,488 INFO [optuna:LightGBM] trial 5 mean_score=0.3982 time=8.0s params={'num_leaves': 31, 'n_estimators': 200, 'max_depth': 8, 'learning_rate': 0.1}
+2026-02-18 10:44:56,983 INFO [optuna:LightGBM] trial 6 mean_score=0.3989 time=5.5s params={'num_leaves': 50, 'n_estimators': 100, 'max_depth': 8, 'learning_rate': 0.1}
+2026-02-18 10:45:03,119 INFO [optuna:LightGBM] trial 7 mean_score=0.4078 time=6.1s params={'num_leaves': 50, 'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.05}
+2026-02-18 10:45:03,119 INFO Optuna best for LightGBM: score=0.4078 params={'num_leaves': 50, 'n_estimators': 100, 'max_depth': 12, 'learning_rate': 0.05}
+2026-02-18 10:45:03,122 INFO [LightGBM] starting fit (fold 1)
+2026-02-18 10:45:07,743 INFO [LightGBM] finished fit in 4.6s
+2026-02-18 10:45:07,754 INFO LightGBM        acc=0.4467 f1=0.3946 total_time=65.5s
+2026-02-18 10:45:07,781 INFO [CatBoost] starting fit (fold 1)
+2026-02-18 10:45:13,796 INFO [CatBoost] finished fit in 6.0s
+2026-02-18 10:45:13,807 INFO CatBoost        acc=0.4375 f1=0.4054 total_time=6.0s
+2026-02-18 10:45:15,321 ERROR TF model training error: {{function_node __wrapped__FloorMod_device_/job:localhost/replica:0/task:0/device:GPU:0}} 'cuLaunchKernel(function, gridX, gridY, gridZ, blockX, blockY, blockZ, 0, reinterpret_cast<CUstream>(stream), params, nullptr)' failed with 'CUDA_ERROR_INVALID_HANDLE' [Op:FloorMod] name: 
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 577, in run_all
+    model_cf, metrics_cf = train_eval_neural_cf(train_df, test_df, meta, epochs=5)
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 377, in train_eval_neural_cf
+    u_emb = layers.Embedding(input_dim=num_users+1, output_dim=embed_dim, name='u_emb')(user_in)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/keras/src/backend/tensorflow/random.py", line 19, in _cast_seed
+    seed = tf.cast(tf.math.floormod(seed, tf.int32.max - 1), dtype="int32")
+tensorflow.python.framework.errors_impl.InternalError: {{function_node __wrapped__FloorMod_device_/job:localhost/replica:0/task:0/device:GPU:0}} 'cuLaunchKernel(function, gridX, gridY, gridZ, blockX, blockY, blockZ, 0, reinterpret_cast<CUstream>(stream), params, nullptr)' failed with 'CUDA_ERROR_INVALID_HANDLE' [Op:FloorMod] name: 
+2026-02-18 10:45:15,323 INFO ===== FOLD 2 =====
+2026-02-18 10:45:21,112 INFO Baseline acc=0.4103, f1=0.2752
+2026-02-18 10:45:21,112 INFO Building features for fold 2 (train-only SVD; no external metadata)
+2026-02-18 10:45:28,488 INFO Cached preprocessed arrays to fold_cache1/X_train_fold2.joblib ...
+2026-02-18 10:45:28,497 INFO [Logistic] starting fit (fold 2)
+2026-02-18 10:46:44,859 INFO [Logistic] finished fit in 76.4s
+2026-02-18 10:46:44,872 INFO Logistic        acc=0.4375 f1=0.3682 total_time=76.4s
+2026-02-18 10:46:44,884 INFO [SGD_Log] starting fit (fold 2)
+2026-02-18 10:46:50,559 INFO [SGD_Log] finished fit in 5.7s
+2026-02-18 10:46:50,572 INFO SGD_Log         acc=0.4106 f1=0.3545 total_time=5.7s
+2026-02-18 10:46:50,585 INFO [ComplementNB] starting fit (fold 2)
+2026-02-18 10:46:50,633 INFO [ComplementNB] finished fit in 0.0s
+2026-02-18 10:46:50,646 INFO ComplementNB    acc=0.2836 f1=0.1843 total_time=0.1s
+2026-02-18 10:46:50,659 INFO [KNN] starting fit (fold 2)
+2026-02-18 10:46:54,956 INFO [KNN] finished fit in 4.3s
+2026-02-18 10:46:54,967 INFO KNN             acc=0.3461 f1=0.3247 total_time=4.3s
+2026-02-18 10:46:54,999 INFO [LinearSVC] starting fit (fold 2)
+2026-02-18 10:47:13,049 INFO [LinearSVC] finished fit in 18.0s
+2026-02-18 10:47:13,059 INFO LinearSVC       acc=0.4268 f1=0.3331 total_time=18.1s
+2026-02-18 10:47:13,068 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 10:47:13,068 INFO [RandomForest] starting fit (fold 2)
+2026-02-18 10:54:08,958 INFO NUM_THREADS=8
+2026-02-18 10:54:08,970 INFO XGBoost available
+2026-02-18 10:54:09,030 INFO LightGBM available
+2026-02-18 10:54:09,194 INFO CatBoost available
+2026-02-18 10:54:10,747 INFO TensorFlow available
+2026-02-18 10:54:11,097 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 10:54:11,097 INFO ===== FOLD 1 =====
+2026-02-18 10:54:16,884 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 10:54:16,884 INFO Loading cached arrays for fold 1
+2026-02-18 10:54:16,928 INFO [Logistic] starting fit (fold 1)
+2026-02-18 10:55:23,051 INFO [Logistic] finished fit in 66.1s
+2026-02-18 10:55:23,067 INFO Logistic        acc=0.4326 f1=0.3704 total_time=66.1s
+2026-02-18 10:55:23,080 INFO [SGD_Log] starting fit (fold 1)
+2026-02-18 10:55:28,773 INFO [SGD_Log] finished fit in 5.7s
+2026-02-18 10:55:28,794 INFO SGD_Log         acc=0.4123 f1=0.3471 total_time=5.7s
+2026-02-18 10:55:28,814 INFO [ComplementNB] starting fit (fold 1)
+2026-02-18 10:55:28,871 INFO [ComplementNB] finished fit in 0.1s
+2026-02-18 10:55:28,883 INFO ComplementNB    acc=0.2889 f1=0.1914 total_time=0.1s
+2026-02-18 10:55:28,895 INFO [KNN] starting fit (fold 1)
+2026-02-18 10:55:33,271 INFO [KNN] finished fit in 4.4s
+2026-02-18 10:55:33,282 INFO KNN             acc=0.3531 f1=0.3354 total_time=4.4s
+2026-02-18 10:55:33,424 INFO [LinearSVC] starting fit (fold 1)
+2026-02-18 10:55:48,544 INFO [LinearSVC] finished fit in 15.1s
+2026-02-18 10:55:48,557 INFO LinearSVC       acc=0.4259 f1=0.3353 total_time=15.1s
+2026-02-18 10:55:48,569 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 10:55:48,569 INFO [RandomForest] starting fit (fold 1)
+2026-02-18 10:57:06,299 INFO [RandomForest] finished fit in 77.7s
+2026-02-18 10:57:06,315 INFO RandomForest    acc=0.4486 f1=0.4102 total_time=77.7s
+2026-02-18 10:57:09,459 INFO [ExtraTrees] starting fit (fold 1)
+2026-02-18 10:57:14,592 INFO [ExtraTrees] finished fit in 5.1s
+2026-02-18 10:57:14,605 INFO ExtraTrees      acc=0.4440 f1=0.3980 total_time=5.2s
+2026-02-18 10:57:21,733 INFO [MLP] starting fit (fold 1)
+2026-02-18 11:01:35,398 INFO [MLP] finished fit in 253.7s
+2026-02-18 11:01:35,412 INFO MLP             acc=0.3482 f1=0.3365 total_time=253.7s
+2026-02-18 11:01:35,435 INFO Starting tuning for XGBoost (trials=8, cv=2)
+2026-02-18 11:01:35,774 ERROR Tuning failed for XGBoost: 
+All the 2 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/sklearn.py", line 1559, in fit
+    raise ValueError(
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [0 1 2 3 4], got [1 2 3 4 5]
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 521, in run_all
+    best_params = tune_model(name, estimator, X_train, y_train, n_trials=TUNING_TRIALS, cv=TUNING_CV, n_jobs=TUNER_N_JOBS)
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 339, in tune_model
+    study.optimize(optuna_obj, n_trials=n_trials, n_jobs=1)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/study.py", line 490, in optimize
+    _optimize(
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 68, in _optimize
+    _optimize_sequential(
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 263, in _run_trial
+    raise func_err
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 334, in optuna_obj
+    scores = cross_val_score(est, X, y, cv=cv, scoring='accuracy', n_jobs=1)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 684, in cross_val_score
+    cv_results = cross_validate(
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 431, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 2 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/sklearn.py", line 1559, in fit
+    raise ValueError(
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [0 1 2 3 4], got [1 2 3 4 5]
+
+2026-02-18 11:01:35,775 INFO [XGBoost] starting fit (fold 1)
+2026-02-18 11:01:43,375 INFO [XGBoost] finished fit in 7.6s
+2026-02-18 11:01:43,386 INFO XGBoost         acc=0.4443 f1=0.4102 total_time=8.0s
+2026-02-18 11:01:43,404 INFO LightGBM: using saved best_params from saved_models_no_meta/best_params_LightGBM.json
+2026-02-18 11:01:43,404 INFO [LightGBM] starting fit (fold 1)
+2026-02-18 11:01:48,191 INFO [LightGBM] finished fit in 4.8s
+2026-02-18 11:01:48,205 INFO LightGBM        acc=0.4467 f1=0.3946 total_time=4.8s
+2026-02-18 11:01:48,236 INFO [CatBoost] starting fit (fold 1)
+2026-02-18 11:01:54,491 INFO [CatBoost] finished fit in 6.3s
+2026-02-18 11:01:54,507 INFO CatBoost        acc=0.4375 f1=0.4054 total_time=6.3s
+2026-02-18 11:02:06,130 INFO NeuralCF acc=0.4179 f1=0.2698
+2026-02-18 11:02:20,966 INFO SiameseCF acc=0.4454 f1=0.3990
+2026-02-18 11:02:20,966 INFO ===== FOLD 2 =====
+2026-02-18 11:02:26,866 INFO Baseline acc=0.4103, f1=0.2752
+2026-02-18 11:02:26,867 INFO Loading cached arrays for fold 2
+2026-02-18 11:02:26,916 INFO [Logistic] starting fit (fold 2)
+2026-02-18 11:03:44,044 INFO [Logistic] finished fit in 77.1s
+2026-02-18 11:03:44,070 INFO Logistic        acc=0.4375 f1=0.3682 total_time=77.2s
+2026-02-18 11:03:44,089 INFO [SGD_Log] starting fit (fold 2)
+2026-02-18 11:03:49,821 INFO [SGD_Log] finished fit in 5.7s
+2026-02-18 11:03:49,834 INFO SGD_Log         acc=0.4106 f1=0.3545 total_time=5.7s
+2026-02-18 11:03:49,846 INFO [ComplementNB] starting fit (fold 2)
+2026-02-18 11:03:49,897 INFO [ComplementNB] finished fit in 0.1s
+2026-02-18 11:03:49,909 INFO ComplementNB    acc=0.2836 f1=0.1843 total_time=0.1s
+2026-02-18 11:03:49,922 INFO [KNN] starting fit (fold 2)
+2026-02-18 11:03:54,247 INFO [KNN] finished fit in 4.3s
+2026-02-18 11:03:54,258 INFO KNN             acc=0.3461 f1=0.3247 total_time=4.3s
+2026-02-18 11:03:54,454 INFO [LinearSVC] starting fit (fold 2)
+2026-02-18 11:04:12,136 INFO [LinearSVC] finished fit in 17.7s
+2026-02-18 11:04:12,149 INFO LinearSVC       acc=0.4268 f1=0.3331 total_time=17.7s
+2026-02-18 11:04:12,161 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 11:04:12,161 INFO [RandomForest] starting fit (fold 2)
+2026-02-18 11:05:31,113 INFO [RandomForest] finished fit in 79.0s
+2026-02-18 11:05:31,127 INFO RandomForest    acc=0.4484 f1=0.4097 total_time=79.0s
+2026-02-18 11:05:31,548 INFO [ExtraTrees] starting fit (fold 2)
+2026-02-18 11:05:36,485 INFO [ExtraTrees] finished fit in 4.9s
+2026-02-18 11:05:36,499 INFO ExtraTrees      acc=0.4449 f1=0.3968 total_time=5.0s
+2026-02-18 11:05:37,422 INFO [MLP] starting fit (fold 2)
+2026-02-18 11:08:50,212 INFO [MLP] finished fit in 192.8s
+2026-02-18 11:08:50,226 INFO MLP             acc=0.3418 f1=0.3266 total_time=192.9s
+2026-02-18 11:08:50,247 INFO [XGBoost] starting fit (fold 2)
+2026-02-18 11:08:57,865 INFO [XGBoost] finished fit in 7.6s
+2026-02-18 11:08:57,876 INFO XGBoost         acc=0.4432 f1=0.4085 total_time=7.6s
+2026-02-18 11:08:57,894 INFO LightGBM: using saved best_params from saved_models_no_meta/best_params_LightGBM.json
+2026-02-18 11:08:57,894 INFO [LightGBM] starting fit (fold 2)
+2026-02-18 11:09:06,697 INFO [LightGBM] finished fit in 8.8s
+2026-02-18 11:09:06,708 INFO LightGBM        acc=0.4539 f1=0.3975 total_time=8.8s
+2026-02-18 11:09:06,734 INFO [CatBoost] starting fit (fold 2)
+2026-02-18 11:09:13,018 INFO [CatBoost] finished fit in 6.3s
+2026-02-18 11:09:13,032 INFO CatBoost        acc=0.4387 f1=0.3989 total_time=6.3s
+2026-02-18 11:09:20,123 INFO NeuralCF acc=0.4206 f1=0.2709
+2026-02-18 11:09:29,287 INFO SiameseCF acc=0.4456 f1=0.3608
+2026-02-18 11:09:29,287 INFO ===== FOLD 3 =====
+2026-02-18 11:09:35,214 INFO Baseline acc=0.4077, f1=0.2658
+2026-02-18 11:09:35,214 INFO Building features for fold 3 (train-only SVD; no external metadata)
+2026-02-18 11:09:42,413 INFO Cached preprocessed arrays to fold_cache1/X_train_fold3.joblib ...
+2026-02-18 11:09:42,422 INFO [Logistic] starting fit (fold 3)
+2026-02-18 11:10:50,117 INFO [Logistic] finished fit in 67.7s
+2026-02-18 11:10:50,131 INFO Logistic        acc=0.4328 f1=0.3659 total_time=67.7s
+2026-02-18 11:10:50,144 INFO [SGD_Log] starting fit (fold 3)
+2026-02-18 11:10:56,021 INFO [SGD_Log] finished fit in 5.9s
+2026-02-18 11:10:56,036 INFO SGD_Log         acc=0.4066 f1=0.3338 total_time=5.9s
+2026-02-18 11:10:56,048 INFO [ComplementNB] starting fit (fold 3)
+2026-02-18 11:10:56,098 INFO [ComplementNB] finished fit in 0.0s
+2026-02-18 11:10:56,110 INFO ComplementNB    acc=0.2610 f1=0.1769 total_time=0.1s
+2026-02-18 11:10:56,122 INFO [KNN] starting fit (fold 3)
+2026-02-18 11:11:00,449 INFO [KNN] finished fit in 4.3s
+2026-02-18 11:11:00,459 INFO KNN             acc=0.3559 f1=0.3306 total_time=4.3s
+2026-02-18 11:11:00,492 INFO [LinearSVC] starting fit (fold 3)
+2026-02-18 11:11:17,204 INFO [LinearSVC] finished fit in 16.7s
+2026-02-18 11:11:17,217 INFO LinearSVC       acc=0.4283 f1=0.3220 total_time=16.7s
+2026-02-18 11:11:17,229 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 11:11:17,229 INFO [RandomForest] starting fit (fold 3)
+2026-02-18 11:12:33,795 INFO [RandomForest] finished fit in 76.6s
+2026-02-18 11:12:33,809 INFO RandomForest    acc=0.4415 f1=0.3997 total_time=76.6s
+2026-02-18 11:12:34,220 INFO [ExtraTrees] starting fit (fold 3)
+2026-02-18 11:12:39,233 INFO [ExtraTrees] finished fit in 5.0s
+2026-02-18 11:12:39,246 INFO ExtraTrees      acc=0.4447 f1=0.3948 total_time=5.0s
+2026-02-18 11:12:40,185 INFO [MLP] starting fit (fold 3)
+2026-02-18 11:18:13,454 INFO [MLP] finished fit in 333.3s
+2026-02-18 11:18:13,469 INFO MLP             acc=0.3384 f1=0.3181 total_time=333.3s
+2026-02-18 11:18:13,492 INFO [XGBoost] starting fit (fold 3)
+2026-02-18 11:18:21,192 INFO [XGBoost] finished fit in 7.7s
+2026-02-18 11:18:21,203 INFO XGBoost         acc=0.4429 f1=0.4051 total_time=7.7s
+2026-02-18 11:18:21,222 INFO LightGBM: using saved best_params from saved_models_no_meta/best_params_LightGBM.json
+2026-02-18 11:18:21,222 INFO [LightGBM] starting fit (fold 3)
+2026-02-18 11:18:25,786 INFO [LightGBM] finished fit in 4.6s
+2026-02-18 11:18:25,800 INFO LightGBM        acc=0.4518 f1=0.3968 total_time=4.6s
+2026-02-18 11:18:25,828 INFO [CatBoost] starting fit (fold 3)
+2026-02-18 11:18:32,172 INFO [CatBoost] finished fit in 6.3s
+2026-02-18 11:18:32,183 INFO CatBoost        acc=0.4364 f1=0.3947 total_time=6.4s
+2026-02-18 11:18:39,291 INFO NeuralCF acc=0.4305 f1=0.3146
+2026-02-18 11:18:48,312 INFO SiameseCF acc=0.4016 f1=0.2628
+2026-02-18 11:18:48,312 INFO ===== FOLD 4 =====
+2026-02-18 11:18:54,369 INFO Baseline acc=0.4106, f1=0.2642
+2026-02-18 11:18:54,369 INFO Building features for fold 4 (train-only SVD; no external metadata)
+2026-02-18 11:19:01,843 INFO Cached preprocessed arrays to fold_cache1/X_train_fold4.joblib ...
+2026-02-18 11:19:01,853 INFO [Logistic] starting fit (fold 4)
+2026-02-18 11:19:57,302 INFO [Logistic] finished fit in 55.4s
+2026-02-18 11:19:57,340 INFO Logistic        acc=0.4294 f1=0.3528 total_time=55.5s
+2026-02-18 11:19:57,372 INFO [SGD_Log] starting fit (fold 4)
+2026-02-18 11:20:02,843 INFO [SGD_Log] finished fit in 5.5s
+2026-02-18 11:20:02,859 INFO SGD_Log         acc=0.4059 f1=0.3144 total_time=5.5s
+2026-02-18 11:20:02,889 INFO [ComplementNB] starting fit (fold 4)
+2026-02-18 11:20:02,954 INFO [ComplementNB] finished fit in 0.1s
+2026-02-18 11:20:02,966 INFO ComplementNB    acc=0.2607 f1=0.1861 total_time=0.1s
+2026-02-18 11:20:02,979 INFO [KNN] starting fit (fold 4)
+2026-02-18 11:20:07,257 INFO [KNN] finished fit in 4.3s
+2026-02-18 11:20:07,268 INFO KNN             acc=0.3569 f1=0.3240 total_time=4.3s
+2026-02-18 11:20:07,301 INFO [LinearSVC] starting fit (fold 4)
+2026-02-18 11:20:23,415 INFO [LinearSVC] finished fit in 16.1s
+2026-02-18 11:20:23,427 INFO LinearSVC       acc=0.4188 f1=0.3048 total_time=16.1s
+2026-02-18 11:20:23,440 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 11:20:23,440 INFO [RandomForest] starting fit (fold 4)
+2026-02-18 11:21:41,113 INFO [RandomForest] finished fit in 77.7s
+2026-02-18 11:21:41,128 INFO RandomForest    acc=0.4426 f1=0.3973 total_time=77.7s
+2026-02-18 11:21:41,539 INFO [ExtraTrees] starting fit (fold 4)
+2026-02-18 11:21:46,529 INFO [ExtraTrees] finished fit in 5.0s
+2026-02-18 11:21:46,542 INFO ExtraTrees      acc=0.4387 f1=0.3822 total_time=5.0s
+2026-02-18 11:21:47,464 INFO [MLP] starting fit (fold 4)
+2026-02-18 11:25:34,196 INFO [MLP] finished fit in 226.7s
+2026-02-18 11:25:34,211 INFO MLP             acc=0.3413 f1=0.3165 total_time=226.8s
+2026-02-18 11:25:34,233 INFO [XGBoost] starting fit (fold 4)
+2026-02-18 11:25:41,663 INFO [XGBoost] finished fit in 7.4s
+2026-02-18 11:25:41,674 INFO XGBoost         acc=0.4349 f1=0.3946 total_time=7.4s
+2026-02-18 11:25:41,693 INFO LightGBM: using saved best_params from saved_models_no_meta/best_params_LightGBM.json
+2026-02-18 11:25:41,693 INFO [LightGBM] starting fit (fold 4)
+2026-02-18 11:25:46,496 INFO [LightGBM] finished fit in 4.8s
+2026-02-18 11:25:46,507 INFO LightGBM        acc=0.4446 f1=0.3882 total_time=4.8s
+2026-02-18 11:25:46,535 INFO [CatBoost] starting fit (fold 4)
+2026-02-18 11:25:52,618 INFO [CatBoost] finished fit in 6.1s
+2026-02-18 11:25:52,628 INFO CatBoost        acc=0.4336 f1=0.3931 total_time=6.1s
+2026-02-18 11:25:59,681 INFO NeuralCF acc=0.4194 f1=0.2765
+2026-02-18 11:26:09,111 INFO SiameseCF acc=0.4361 f1=0.3594
+2026-02-18 11:26:09,111 INFO ===== FOLD 5 =====
+2026-02-18 11:26:14,880 INFO Baseline acc=0.4070, f1=0.2584
+2026-02-18 11:26:14,880 INFO Building features for fold 5 (train-only SVD; no external metadata)
+2026-02-18 11:26:22,187 INFO Cached preprocessed arrays to fold_cache1/X_train_fold5.joblib ...
+2026-02-18 11:26:22,197 INFO [Logistic] starting fit (fold 5)
+2026-02-18 11:27:27,981 INFO [Logistic] finished fit in 65.8s
+2026-02-18 11:27:28,000 INFO Logistic        acc=0.4238 f1=0.3508 total_time=65.8s
+2026-02-18 11:27:28,024 INFO [SGD_Log] starting fit (fold 5)
+2026-02-18 11:27:33,209 INFO [SGD_Log] finished fit in 5.2s
+2026-02-18 11:27:33,222 INFO SGD_Log         acc=0.3952 f1=0.3352 total_time=5.2s
+2026-02-18 11:27:33,234 INFO [ComplementNB] starting fit (fold 5)
+2026-02-18 11:27:33,286 INFO [ComplementNB] finished fit in 0.1s
+2026-02-18 11:27:33,299 INFO ComplementNB    acc=0.2736 f1=0.1984 total_time=0.1s
+2026-02-18 11:27:33,311 INFO [KNN] starting fit (fold 5)
+2026-02-18 11:27:37,630 INFO [KNN] finished fit in 4.3s
+2026-02-18 11:27:37,640 INFO KNN             acc=0.3543 f1=0.3254 total_time=4.3s
+2026-02-18 11:27:37,672 INFO [LinearSVC] starting fit (fold 5)
+2026-02-18 11:27:54,926 INFO [LinearSVC] finished fit in 17.3s
+2026-02-18 11:27:54,936 INFO LinearSVC       acc=0.4159 f1=0.3073 total_time=17.3s
+2026-02-18 11:27:54,945 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 11:27:54,945 INFO [RandomForest] starting fit (fold 5)
+2026-02-18 11:29:13,633 INFO [RandomForest] finished fit in 78.7s
+2026-02-18 11:29:13,648 INFO RandomForest    acc=0.4330 f1=0.3899 total_time=78.7s
+2026-02-18 11:29:14,049 INFO [ExtraTrees] starting fit (fold 5)
+2026-02-18 11:29:19,140 INFO [ExtraTrees] finished fit in 5.1s
+2026-02-18 11:29:19,156 INFO ExtraTrees      acc=0.4333 f1=0.3780 total_time=5.1s
+2026-02-18 11:29:20,073 INFO [MLP] starting fit (fold 5)
+2026-02-18 11:33:04,140 INFO [MLP] finished fit in 224.1s
+2026-02-18 11:33:04,154 INFO MLP             acc=0.3406 f1=0.3186 total_time=224.1s
+2026-02-18 11:33:04,176 INFO [XGBoost] starting fit (fold 5)
+2026-02-18 11:33:11,981 INFO [XGBoost] finished fit in 7.8s
+2026-02-18 11:33:11,992 INFO XGBoost         acc=0.4347 f1=0.3984 total_time=7.8s
+2026-02-18 11:33:12,010 INFO LightGBM: using saved best_params from saved_models_no_meta/best_params_LightGBM.json
+2026-02-18 11:33:12,010 INFO [LightGBM] starting fit (fold 5)
+2026-02-18 11:33:16,736 INFO [LightGBM] finished fit in 4.7s
+2026-02-18 11:33:16,747 INFO LightGBM        acc=0.4421 f1=0.3859 total_time=4.7s
+2026-02-18 11:33:16,773 INFO [CatBoost] starting fit (fold 5)
+2026-02-18 11:33:22,768 INFO [CatBoost] finished fit in 6.0s
+2026-02-18 11:33:22,780 INFO CatBoost        acc=0.4284 f1=0.3835 total_time=6.0s
+2026-02-18 11:33:29,994 INFO NeuralCF acc=0.4208 f1=0.3526
+2026-02-18 11:33:39,120 INFO SiameseCF acc=0.4172 f1=0.3283
+2026-02-18 11:33:39,123 INFO Saved per-fold metrics to ml100k_per_fold_metrics_no_meta.csv
+2026-02-18 11:33:39,123 INFO === AVERAGE SCORES ACROSS FOLDS ===
+2026-02-18 11:33:39,123 INFO Baseline         acc=0.4074  f1_macro=0.2668  prec_macro=nan  rec_macro=nan
+2026-02-18 11:33:39,124 INFO CatBoost         acc=0.4350  f1_macro=0.3951  prec_macro=0.4299540946474282  rec_macro=0.38161539691853025
+2026-02-18 11:33:39,124 INFO ComplementNB     acc=0.2736  f1_macro=0.1875  prec_macro=0.2079036036749812  rec_macro=0.2422645060427498
+2026-02-18 11:33:39,125 INFO ExtraTrees       acc=0.4411  f1_macro=0.3900  prec_macro=0.44496944279743067  rec_macro=0.37297279613220014
+2026-02-18 11:33:39,125 INFO KNN              acc=0.3532  f1_macro=0.3280  prec_macro=0.343602343328013  rec_macro=0.33433316192132423
+2026-02-18 11:33:39,125 INFO LightGBM         acc=0.4478  f1_macro=0.3926  prec_macro=0.44934422702958454  rec_macro=0.37832740449373553
+2026-02-18 11:33:39,126 INFO LinearSVC        acc=0.4231  f1_macro=0.3205  prec_macro=0.39673912046452015  rec_macro=0.32436570036531737
+2026-02-18 11:33:39,126 INFO Logistic         acc=0.4312  f1_macro=0.3616  prec_macro=0.4260900837240299  rec_macro=0.3520061596654771
+2026-02-18 11:33:39,126 INFO MLP              acc=0.3421  f1_macro=0.3233  prec_macro=0.33925525917940486  rec_macro=0.34506607818506047
+2026-02-18 11:33:39,127 INFO NeuralCF         acc=0.4219  f1_macro=0.2969  prec_macro=nan  rec_macro=nan
+2026-02-18 11:33:39,127 INFO RandomForest     acc=0.4428  f1_macro=0.4014  prec_macro=0.4345735288393563  rec_macro=0.38702437967682457
+2026-02-18 11:33:39,128 INFO SGD_Log          acc=0.4061  f1_macro=0.3370  prec_macro=0.3986080146753757  rec_macro=0.32906850477531907
+2026-02-18 11:33:39,128 INFO SiameseCF        acc=0.4292  f1_macro=0.3421  prec_macro=nan  rec_macro=nan
+2026-02-18 11:33:39,128 INFO XGBoost          acc=0.4400  f1_macro=0.4034  prec_macro=0.43401625576471947  rec_macro=0.38934283560454463
+2026-02-18 11:33:39,129 INFO Saved aggregated model averages
+2026-02-18 11:33:39,129 INFO Done.
+2026-02-18 12:30:59,250 INFO NUM_THREADS=8
+2026-02-18 12:30:59,261 INFO XGBoost available
+2026-02-18 12:30:59,321 INFO LightGBM available
+2026-02-18 12:30:59,483 INFO CatBoost available
+2026-02-18 12:31:01,083 INFO TensorFlow available
+2026-02-18 12:31:01,434 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 12:31:01,435 INFO ===== FOLD 1 =====
+2026-02-18 12:31:07,186 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 12:31:07,186 INFO Loading cached arrays for fold 1
+2026-02-18 12:31:18,411 INFO NeuralCF acc=0.4456 f1=0.3840
+2026-02-18 12:31:18,412 ERROR TF model training error: train_eval_strong_neumf() missing 1 required positional argument: 'meta'
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 750, in run_all
+    model_new,metrics_new = train_eval_strong_neumf(train_df,test_df,epochs=30)
+TypeError: train_eval_strong_neumf() missing 1 required positional argument: 'meta'
+2026-02-18 12:31:18,412 INFO ===== FOLD 2 =====
+2026-02-18 12:31:24,137 INFO Baseline acc=0.4103, f1=0.2752
+2026-02-18 12:31:24,137 INFO Loading cached arrays for fold 2
+2026-02-18 12:32:35,415 INFO NUM_THREADS=8
+2026-02-18 12:32:35,426 INFO XGBoost available
+2026-02-18 12:32:35,486 INFO LightGBM available
+2026-02-18 12:32:35,648 INFO CatBoost available
+2026-02-18 12:32:37,174 INFO TensorFlow available
+2026-02-18 12:32:37,525 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 12:32:37,526 INFO ===== FOLD 1 =====
+2026-02-18 12:32:43,282 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 12:32:43,282 INFO Loading cached arrays for fold 1
+2026-02-18 12:32:54,526 INFO NeuralCF acc=0.4261 f1=0.3271
+2026-02-18 12:32:54,599 ERROR TF model training error: module 'keras.optimizers' has no attribute 'experimental'
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 751, in run_all
+    model_new,metrics_new = train_eval_strong_neumf(train_df,test_df,meta,epochs=30)
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 537, in train_eval_strong_neumf
+    optimizer = tf.keras.optimizers.experimental.AdamW(
+AttributeError: module 'keras.optimizers' has no attribute 'experimental'
+2026-02-18 12:32:54,599 INFO ===== FOLD 2 =====
+2026-02-18 12:33:00,420 INFO Baseline acc=0.4103, f1=0.2752
+2026-02-18 12:33:00,420 INFO Loading cached arrays for fold 2
+2026-02-18 12:33:07,632 INFO NeuralCF acc=0.4466 f1=0.3892
+2026-02-18 12:33:07,696 ERROR TF model training error: module 'keras.optimizers' has no attribute 'experimental'
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 751, in run_all
+    model_new,metrics_new = train_eval_strong_neumf(train_df,test_df,meta,epochs=30)
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 537, in train_eval_strong_neumf
+    optimizer = tf.keras.optimizers.experimental.AdamW(
+AttributeError: module 'keras.optimizers' has no attribute 'experimental'
+2026-02-18 12:33:07,696 INFO ===== FOLD 3 =====
+2026-02-18 12:34:53,710 INFO NUM_THREADS=8
+2026-02-18 12:34:53,722 INFO XGBoost available
+2026-02-18 12:34:53,782 INFO LightGBM available
+2026-02-18 12:34:53,946 INFO CatBoost available
+2026-02-18 12:34:55,493 INFO TensorFlow available
+2026-02-18 12:34:55,840 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 12:34:55,840 INFO ===== FOLD 1 =====
+2026-02-18 12:35:01,577 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 12:35:01,577 INFO Loading cached arrays for fold 1
+2026-02-18 12:35:13,164 INFO NeuralCF acc=0.4454 f1=0.3828
+2026-02-18 12:35:47,228 INFO SiameseCF acc=0.4447 f1=0.3774
+2026-02-18 12:35:47,228 INFO ===== FOLD 2 =====
+2026-02-18 12:35:52,960 INFO Baseline acc=0.4103, f1=0.2752
+2026-02-18 12:35:52,960 INFO Loading cached arrays for fold 2
+2026-02-18 12:36:00,147 INFO NeuralCF acc=0.4346 f1=0.3353
+2026-02-18 12:36:24,461 INFO SiameseCF acc=0.4504 f1=0.3905
+2026-02-18 12:36:24,461 INFO ===== FOLD 3 =====
+2026-02-18 12:36:30,348 INFO Baseline acc=0.4077, f1=0.2658
+2026-02-18 12:36:30,349 INFO Loading cached arrays for fold 3
+2026-02-18 12:36:37,429 INFO NeuralCF acc=0.4207 f1=0.3130
+2026-02-18 12:37:01,556 INFO SiameseCF acc=0.4402 f1=0.3590
+2026-02-18 12:37:01,556 INFO ===== FOLD 4 =====
+2026-02-18 12:37:07,257 INFO Baseline acc=0.4106, f1=0.2642
+2026-02-18 12:37:07,257 INFO Loading cached arrays for fold 4
+2026-02-18 12:37:14,563 INFO NeuralCF acc=0.4368 f1=0.3690
+2026-02-18 12:37:37,495 INFO SiameseCF acc=0.4330 f1=0.3386
+2026-02-18 12:37:37,495 INFO ===== FOLD 5 =====
+2026-02-18 12:37:43,386 INFO Baseline acc=0.4070, f1=0.2584
+2026-02-18 12:37:43,387 INFO Loading cached arrays for fold 5
+2026-02-18 12:37:50,723 INFO NeuralCF acc=0.4199 f1=0.3491
+2026-02-18 12:38:15,341 INFO SiameseCF acc=0.4224 f1=0.3523
+2026-02-18 12:38:15,343 INFO Saved per-fold metrics to ml100k_per_fold_metrics_no_meta.csv
+2026-02-18 12:38:15,343 INFO === AVERAGE SCORES ACROSS FOLDS ===
+2026-02-18 12:38:15,344 INFO Baseline         acc=0.4074  f1_macro=0.2668  prec_macro=None  rec_macro=None
+2026-02-18 12:38:15,344 INFO NeuralCF         acc=0.4315  f1_macro=0.3499  prec_macro=None  rec_macro=None
+2026-02-18 12:38:15,345 INFO SiameseCF        acc=0.4381  f1_macro=0.3636  prec_macro=None  rec_macro=None
+2026-02-18 12:38:15,345 INFO new              acc=0.3871  f1_macro=0.2290  prec_macro=None  rec_macro=None
+2026-02-18 12:38:15,346 INFO Saved aggregated model averages
+2026-02-18 12:38:15,346 INFO Done.
+2026-02-18 12:41:23,680 INFO NUM_THREADS=8
+2026-02-18 12:41:23,692 INFO XGBoost available
+2026-02-18 12:41:23,751 INFO LightGBM available
+2026-02-18 12:41:23,915 INFO CatBoost available
+2026-02-18 12:41:25,463 INFO TensorFlow available
+2026-02-18 12:41:25,807 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 12:41:25,807 INFO ===== FOLD 1 =====
+2026-02-18 12:41:31,466 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 12:41:31,467 INFO Loading cached arrays for fold 1
+2026-02-18 12:41:42,830 INFO NeuralCF acc=0.4426 f1=0.3926
+2026-02-18 12:42:17,159 INFO SiameseCF acc=0.4002 f1=0.2560
+2026-02-18 12:42:17,159 INFO ===== FOLD 2 =====
+2026-02-18 12:42:22,877 INFO Baseline acc=0.4103, f1=0.2752
+2026-02-18 12:42:22,877 INFO Loading cached arrays for fold 2
+2026-02-18 12:42:29,786 INFO NeuralCF acc=0.4330 f1=0.3331
+2026-02-18 12:42:53,733 INFO SiameseCF acc=0.4097 f1=0.2631
+2026-02-18 12:42:53,733 INFO ===== FOLD 3 =====
+2026-02-18 12:42:59,603 INFO Baseline acc=0.4077, f1=0.2658
+2026-02-18 12:42:59,603 INFO Loading cached arrays for fold 3
+2026-02-18 12:43:06,468 INFO NeuralCF acc=0.4252 f1=0.3000
+2026-02-18 12:43:30,293 INFO SiameseCF acc=0.4407 f1=0.3765
+2026-02-18 12:43:30,294 INFO ===== FOLD 4 =====
+2026-02-18 12:43:36,250 INFO Baseline acc=0.4106, f1=0.2642
+2026-02-18 12:43:36,250 INFO Loading cached arrays for fold 4
+2026-02-18 12:43:43,175 INFO NeuralCF acc=0.4178 f1=0.2749
+2026-02-18 12:44:07,457 INFO SiameseCF acc=0.4336 f1=0.3566
+2026-02-18 12:44:07,457 INFO ===== FOLD 5 =====
+2026-02-18 12:44:13,104 INFO Baseline acc=0.4070, f1=0.2584
+2026-02-18 12:44:13,104 INFO Loading cached arrays for fold 5
+2026-02-18 12:44:20,121 INFO NeuralCF acc=0.4158 f1=0.3644
+2026-02-18 12:44:44,415 INFO SiameseCF acc=0.4175 f1=0.3344
+2026-02-18 12:44:44,417 INFO Saved per-fold metrics to ml100k_per_fold_metrics_no_meta.csv
+2026-02-18 12:44:44,417 INFO === AVERAGE SCORES ACROSS FOLDS ===
+2026-02-18 12:44:44,418 INFO Baseline         acc=0.4074  f1_macro=0.2668  prec_macro=None  rec_macro=None
+2026-02-18 12:44:44,419 INFO NeuralCF         acc=0.4269  f1_macro=0.3330  prec_macro=None  rec_macro=None
+2026-02-18 12:44:44,419 INFO SiameseCF        acc=0.4204  f1_macro=0.3173  prec_macro=None  rec_macro=None
+2026-02-18 12:44:44,420 INFO new              acc=0.4107  f1_macro=0.3239  prec_macro=None  rec_macro=None
+2026-02-18 12:44:44,420 INFO Saved aggregated model averages
+2026-02-18 12:44:44,420 INFO Done.
+2026-02-18 12:50:19,785 INFO NUM_THREADS=8
+2026-02-18 12:50:19,796 INFO XGBoost available
+2026-02-18 12:50:19,856 INFO LightGBM available
+2026-02-18 12:50:20,021 INFO CatBoost available
+2026-02-18 12:50:21,642 INFO TensorFlow available
+2026-02-18 12:50:21,995 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 12:50:21,995 INFO ===== FOLD 1 =====
+2026-02-18 12:50:27,726 INFO Baseline acc=0.4017, f1=0.2702
+2026-02-18 12:50:27,726 INFO Loading cached arrays for fold 1
+2026-02-18 12:50:27,768 INFO [Logistic] starting fit (fold 1)
+2026-02-18 12:51:33,133 INFO [Logistic] finished fit in 65.4s
+2026-02-18 12:51:33,148 INFO Logistic        acc=0.4326 f1=0.3704 total_time=65.4s
+2026-02-18 12:51:33,189 INFO [SGD_Log] starting fit (fold 1)
+2026-02-18 12:51:38,848 INFO [SGD_Log] finished fit in 5.7s
+2026-02-18 12:51:38,861 INFO SGD_Log         acc=0.4123 f1=0.3471 total_time=5.7s
+2026-02-18 12:51:38,873 INFO [ComplementNB] starting fit (fold 1)
+2026-02-18 12:51:38,925 INFO [ComplementNB] finished fit in 0.1s
+2026-02-18 12:51:38,937 INFO ComplementNB    acc=0.2889 f1=0.1914 total_time=0.1s
+2026-02-18 12:51:38,949 INFO [KNN] starting fit (fold 1)
+2026-02-18 12:51:43,390 INFO [KNN] finished fit in 4.4s
+2026-02-18 12:51:43,401 INFO KNN             acc=0.3531 f1=0.3354 total_time=4.5s
+2026-02-18 12:51:43,544 INFO [LinearSVC] starting fit (fold 1)
+2026-02-18 12:51:58,314 INFO [LinearSVC] finished fit in 14.8s
+2026-02-18 12:51:58,326 INFO LinearSVC       acc=0.4259 f1=0.3353 total_time=14.8s
+2026-02-18 12:51:58,339 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 12:51:58,339 INFO [RandomForest] starting fit (fold 1)
+2026-02-18 12:53:17,527 INFO [RandomForest] finished fit in 79.2s
+2026-02-18 12:53:17,542 INFO RandomForest    acc=0.4486 f1=0.4102 total_time=79.2s
+2026-02-18 12:53:20,603 INFO [ExtraTrees] starting fit (fold 1)
+2026-02-18 12:53:25,585 INFO [ExtraTrees] finished fit in 5.0s
+2026-02-18 12:53:25,604 INFO ExtraTrees      acc=0.4440 f1=0.3980 total_time=5.0s
+2026-02-18 12:53:32,468 INFO [MLP] starting fit (fold 1)
+2026-02-18 12:57:47,305 INFO [MLP] finished fit in 254.8s
+2026-02-18 12:57:47,319 INFO MLP             acc=0.3482 f1=0.3365 total_time=254.9s
+2026-02-18 12:57:47,342 INFO Starting tuning for XGBoost (trials=8, cv=2)
+2026-02-18 12:57:47,693 ERROR Tuning failed for XGBoost: 
+All the 2 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/sklearn.py", line 1559, in fit
+    raise ValueError(
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [0 1 2 3 4], got [1 2 3 4 5]
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 521, in run_all
+    best_params = tune_model(name, estimator, X_train, y_train, n_trials=TUNING_TRIALS, cv=TUNING_CV, n_jobs=TUNER_N_JOBS)
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 337, in tune_model
+    study.optimize(optuna_obj, n_trials=n_trials, n_jobs=1)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/study.py", line 490, in optimize
+    _optimize(
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 68, in _optimize
+    _optimize_sequential(
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 165, in _optimize_sequential
+    frozen_trial_id = _run_trial(study, func, catch)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 263, in _run_trial
+    raise func_err
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/optuna/study/_optimize.py", line 206, in _run_trial
+    value_or_values = func(trial)
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 332, in optuna_obj
+    scores = cross_val_score(est, X, y, cv=cv, scoring='accuracy', n_jobs=1)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 684, in cross_val_score
+    cv_results = cross_validate(
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/utils/_param_validation.py", line 216, in wrapper
+    return func(*args, **kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 431, in cross_validate
+    _warn_or_raise_about_fit_failures(results, error_score)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 517, in _warn_or_raise_about_fit_failures
+    raise ValueError(all_fits_failed_message)
+ValueError: 
+All the 2 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+2 fits failed with the following error:
+Traceback (most recent call last):
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/sklearn/model_selection/_validation.py", line 866, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/core.py", line 726, in inner_f
+    return func(**kwargs)
+  File "/home/aditya22040/.conda_envs/pwork/lib/python3.9/site-packages/xgboost/sklearn.py", line 1559, in fit
+    raise ValueError(
+ValueError: Invalid classes inferred from unique values of `y`.  Expected: [0 1 2 3 4], got [1 2 3 4 5]
+
+2026-02-18 12:57:47,694 INFO [XGBoost] starting fit (fold 1)
+2026-02-18 12:57:55,329 INFO [XGBoost] finished fit in 7.6s
+2026-02-18 12:57:55,340 INFO XGBoost         acc=0.4443 f1=0.4102 total_time=8.0s
+2026-02-18 12:57:55,359 INFO LightGBM: using saved best_params from saved_models_no_meta/best_params_LightGBM.json
+2026-02-18 12:57:55,359 INFO [LightGBM] starting fit (fold 1)
+2026-02-18 12:58:00,193 INFO [LightGBM] finished fit in 4.8s
+2026-02-18 12:58:00,204 INFO LightGBM        acc=0.4467 f1=0.3946 total_time=4.8s
+2026-02-18 12:58:00,234 INFO [CatBoost] starting fit (fold 1)
+2026-02-18 12:58:06,762 INFO [CatBoost] finished fit in 6.5s
+2026-02-18 12:58:06,772 INFO CatBoost        acc=0.4375 f1=0.4054 total_time=6.5s
+2026-02-18 12:58:18,060 INFO NeuralCF acc=0.4146 f1=0.2707
+2026-02-18 12:58:18,061 ERROR TF model training error: name 'train_eval_strong_neumf' is not defined
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 581, in run_all
+    model_new,metrics_new = train_eval_strong_neumf(train_df,test_df,meta,epochs=30)
+NameError: name 'train_eval_strong_neumf' is not defined
+2026-02-18 12:58:18,061 INFO ===== FOLD 2 =====
+2026-02-18 12:58:23,888 INFO Baseline acc=0.4103, f1=0.2752
+2026-02-18 12:58:23,888 INFO Loading cached arrays for fold 2
+2026-02-18 12:58:23,937 INFO [Logistic] starting fit (fold 2)
+2026-02-18 12:59:40,926 INFO [Logistic] finished fit in 77.0s
+2026-02-18 12:59:40,940 INFO Logistic        acc=0.4375 f1=0.3682 total_time=77.0s
+2026-02-18 12:59:40,953 INFO [SGD_Log] starting fit (fold 2)
+2026-02-18 12:59:46,681 INFO [SGD_Log] finished fit in 5.7s
+2026-02-18 12:59:46,694 INFO SGD_Log         acc=0.4106 f1=0.3545 total_time=5.7s
+2026-02-18 12:59:46,707 INFO [ComplementNB] starting fit (fold 2)
+2026-02-18 12:59:46,763 INFO [ComplementNB] finished fit in 0.1s
+2026-02-18 12:59:46,776 INFO ComplementNB    acc=0.2836 f1=0.1843 total_time=0.1s
+2026-02-18 12:59:46,789 INFO [KNN] starting fit (fold 2)
+2026-02-18 12:59:51,163 INFO [KNN] finished fit in 4.4s
+2026-02-18 12:59:51,173 INFO KNN             acc=0.3461 f1=0.3247 total_time=4.4s
+2026-02-18 12:59:51,290 INFO [LinearSVC] starting fit (fold 2)
+2026-02-18 13:00:09,313 INFO [LinearSVC] finished fit in 18.0s
+2026-02-18 13:00:09,326 INFO LinearSVC       acc=0.4268 f1=0.3331 total_time=18.0s
+2026-02-18 13:00:09,338 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 13:00:09,338 INFO [RandomForest] starting fit (fold 2)
+2026-02-18 13:01:26,582 INFO [RandomForest] finished fit in 77.2s
+2026-02-18 13:01:26,597 INFO RandomForest    acc=0.4484 f1=0.4097 total_time=77.3s
+2026-02-18 13:01:29,458 INFO [ExtraTrees] starting fit (fold 2)
+2026-02-18 13:01:34,447 INFO [ExtraTrees] finished fit in 5.0s
+2026-02-18 13:01:34,460 INFO ExtraTrees      acc=0.4449 f1=0.3968 total_time=5.0s
+2026-02-18 13:01:41,539 INFO [MLP] starting fit (fold 2)
+2026-02-18 13:04:58,192 INFO [MLP] finished fit in 196.7s
+2026-02-18 13:04:58,206 INFO MLP             acc=0.3418 f1=0.3266 total_time=196.7s
+2026-02-18 13:04:58,229 INFO [XGBoost] starting fit (fold 2)
+2026-02-18 13:05:05,863 INFO [XGBoost] finished fit in 7.6s
+2026-02-18 13:05:05,874 INFO XGBoost         acc=0.4432 f1=0.4085 total_time=7.6s
+2026-02-18 13:05:05,893 INFO LightGBM: using saved best_params from saved_models_no_meta/best_params_LightGBM.json
+2026-02-18 13:05:05,893 INFO [LightGBM] starting fit (fold 2)
+2026-02-18 13:05:10,262 INFO [LightGBM] finished fit in 4.4s
+2026-02-18 13:05:10,273 INFO LightGBM        acc=0.4539 f1=0.3975 total_time=4.4s
+2026-02-18 13:05:10,300 INFO [CatBoost] starting fit (fold 2)
+2026-02-18 13:05:16,472 INFO [CatBoost] finished fit in 6.2s
+2026-02-18 13:05:16,483 INFO CatBoost        acc=0.4387 f1=0.3989 total_time=6.2s
+2026-02-18 13:05:23,556 INFO NeuralCF acc=0.4193 f1=0.2760
+2026-02-18 13:05:23,556 ERROR TF model training error: name 'train_eval_strong_neumf' is not defined
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 581, in run_all
+    model_new,metrics_new = train_eval_strong_neumf(train_df,test_df,meta,epochs=30)
+NameError: name 'train_eval_strong_neumf' is not defined
+2026-02-18 13:05:23,556 INFO ===== FOLD 3 =====
+2026-02-18 13:05:29,388 INFO Baseline acc=0.4077, f1=0.2658
+2026-02-18 13:05:29,388 INFO Loading cached arrays for fold 3
+2026-02-18 13:05:29,439 INFO [Logistic] starting fit (fold 3)
+2026-02-18 13:06:37,235 INFO [Logistic] finished fit in 67.8s
+2026-02-18 13:06:37,261 INFO Logistic        acc=0.4328 f1=0.3659 total_time=67.8s
+2026-02-18 13:06:37,289 INFO [SGD_Log] starting fit (fold 3)
+2026-02-18 13:06:43,210 INFO [SGD_Log] finished fit in 5.9s
+2026-02-18 13:06:43,223 INFO SGD_Log         acc=0.4066 f1=0.3338 total_time=5.9s
+2026-02-18 13:06:43,235 INFO [ComplementNB] starting fit (fold 3)
+2026-02-18 13:06:43,288 INFO [ComplementNB] finished fit in 0.1s
+2026-02-18 13:06:43,301 INFO ComplementNB    acc=0.2610 f1=0.1769 total_time=0.1s
+2026-02-18 13:06:43,313 INFO [KNN] starting fit (fold 3)
+2026-02-18 13:06:47,614 INFO [KNN] finished fit in 4.3s
+2026-02-18 13:06:47,624 INFO KNN             acc=0.3559 f1=0.3306 total_time=4.3s
+2026-02-18 13:06:47,751 INFO [LinearSVC] starting fit (fold 3)
+2026-02-18 13:07:03,781 INFO [LinearSVC] finished fit in 16.0s
+2026-02-18 13:07:03,794 INFO LinearSVC       acc=0.4283 f1=0.3220 total_time=16.0s
+2026-02-18 13:07:03,806 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 13:07:03,806 INFO [RandomForest] starting fit (fold 3)
+2026-02-18 13:08:22,944 INFO [RandomForest] finished fit in 79.1s
+2026-02-18 13:08:22,957 INFO RandomForest    acc=0.4415 f1=0.3997 total_time=79.2s
+2026-02-18 13:08:26,074 INFO [ExtraTrees] starting fit (fold 3)
+2026-02-18 13:08:31,055 INFO [ExtraTrees] finished fit in 5.0s
+2026-02-18 13:08:31,071 INFO ExtraTrees      acc=0.4447 f1=0.3948 total_time=5.0s
+2026-02-18 13:08:38,302 INFO [MLP] starting fit (fold 3)
+2026-02-18 13:14:21,632 INFO [MLP] finished fit in 343.3s
+2026-02-18 13:14:21,659 INFO MLP             acc=0.3384 f1=0.3181 total_time=343.4s
+2026-02-18 13:14:21,701 INFO [XGBoost] starting fit (fold 3)
+2026-02-18 13:14:29,216 INFO [XGBoost] finished fit in 7.5s
+2026-02-18 13:14:29,227 INFO XGBoost         acc=0.4429 f1=0.4051 total_time=7.5s
+2026-02-18 13:14:29,246 INFO LightGBM: using saved best_params from saved_models_no_meta/best_params_LightGBM.json
+2026-02-18 13:14:29,246 INFO [LightGBM] starting fit (fold 3)
+2026-02-18 13:14:34,049 INFO [LightGBM] finished fit in 4.8s
+2026-02-18 13:14:34,060 INFO LightGBM        acc=0.4518 f1=0.3968 total_time=4.8s
+2026-02-18 13:14:34,086 INFO [CatBoost] starting fit (fold 3)
+2026-02-18 13:14:40,550 INFO [CatBoost] finished fit in 6.5s
+2026-02-18 13:14:40,561 INFO CatBoost        acc=0.4364 f1=0.3947 total_time=6.5s
+2026-02-18 13:14:47,629 INFO NeuralCF acc=0.4284 f1=0.3141
+2026-02-18 13:14:47,629 ERROR TF model training error: name 'train_eval_strong_neumf' is not defined
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 581, in run_all
+    model_new,metrics_new = train_eval_strong_neumf(train_df,test_df,meta,epochs=30)
+NameError: name 'train_eval_strong_neumf' is not defined
+2026-02-18 13:14:47,629 INFO ===== FOLD 4 =====
+2026-02-18 13:14:53,469 INFO Baseline acc=0.4106, f1=0.2642
+2026-02-18 13:14:53,469 INFO Loading cached arrays for fold 4
+2026-02-18 13:14:53,519 INFO [Logistic] starting fit (fold 4)
+2026-02-18 13:15:49,518 INFO [Logistic] finished fit in 56.0s
+2026-02-18 13:15:49,533 INFO Logistic        acc=0.4294 f1=0.3528 total_time=56.0s
+2026-02-18 13:15:49,545 INFO [SGD_Log] starting fit (fold 4)
+2026-02-18 13:15:55,057 INFO [SGD_Log] finished fit in 5.5s
+2026-02-18 13:15:55,069 INFO SGD_Log         acc=0.4059 f1=0.3144 total_time=5.5s
+2026-02-18 13:15:55,082 INFO [ComplementNB] starting fit (fold 4)
+2026-02-18 13:15:55,130 INFO [ComplementNB] finished fit in 0.0s
+2026-02-18 13:15:55,143 INFO ComplementNB    acc=0.2607 f1=0.1861 total_time=0.1s
+2026-02-18 13:15:55,155 INFO [KNN] starting fit (fold 4)
+2026-02-18 13:15:59,470 INFO [KNN] finished fit in 4.3s
+2026-02-18 13:15:59,480 INFO KNN             acc=0.3569 f1=0.3240 total_time=4.3s
+2026-02-18 13:15:59,692 INFO [LinearSVC] starting fit (fold 4)
+2026-02-18 13:16:16,313 INFO [LinearSVC] finished fit in 16.6s
+2026-02-18 13:16:16,326 INFO LinearSVC       acc=0.4188 f1=0.3048 total_time=16.6s
+2026-02-18 13:16:16,339 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 13:16:16,339 INFO [RandomForest] starting fit (fold 4)
+2026-02-18 13:17:33,895 INFO [RandomForest] finished fit in 77.6s
+2026-02-18 13:17:33,911 INFO RandomForest    acc=0.4426 f1=0.3973 total_time=77.6s
+2026-02-18 13:17:37,027 INFO [ExtraTrees] starting fit (fold 4)
+2026-02-18 13:17:42,069 INFO [ExtraTrees] finished fit in 5.0s
+2026-02-18 13:17:42,084 INFO ExtraTrees      acc=0.4387 f1=0.3822 total_time=5.1s
+2026-02-18 13:17:49,068 INFO [MLP] starting fit (fold 4)
+2026-02-18 13:20:20,112 INFO NUM_THREADS=8
+2026-02-18 13:20:20,129 INFO XGBoost available
+2026-02-18 13:20:20,215 INFO LightGBM available
+2026-02-18 13:20:20,463 INFO CatBoost available
+2026-02-18 13:20:22,726 INFO TensorFlow available
+2026-02-18 13:20:23,254 INFO Detected user_id max = 943, item_id max = 1682
+2026-02-18 13:20:23,255 INFO ===== FOLD 1 =====
+2026-02-18 13:21:46,901 INFO [MLP] finished fit in 237.8s
+2026-02-18 13:21:46,916 INFO MLP             acc=0.3413 f1=0.3165 total_time=237.9s
+2026-02-18 13:21:46,939 INFO [XGBoost] starting fit (fold 4)
+2026-02-18 13:21:54,399 INFO [XGBoost] finished fit in 7.5s
+2026-02-18 13:21:54,410 INFO XGBoost         acc=0.4349 f1=0.3946 total_time=7.5s
+2026-02-18 13:21:54,429 INFO LightGBM: using saved best_params from saved_models_no_meta/best_params_LightGBM.json
+2026-02-18 13:21:54,429 INFO [LightGBM] starting fit (fold 4)
+2026-02-18 13:22:02,802 INFO [LightGBM] finished fit in 8.4s
+2026-02-18 13:22:02,815 INFO LightGBM        acc=0.4446 f1=0.3882 total_time=8.4s
+2026-02-18 13:22:02,844 INFO [CatBoost] starting fit (fold 4)
+2026-02-18 13:22:09,034 INFO [CatBoost] finished fit in 6.2s
+2026-02-18 13:22:09,045 INFO CatBoost        acc=0.4336 f1=0.3931 total_time=6.2s
+2026-02-18 13:22:16,068 INFO NeuralCF acc=0.4232 f1=0.2873
+2026-02-18 13:22:16,068 ERROR TF model training error: name 'train_eval_strong_neumf' is not defined
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 581, in run_all
+    if RUN_SIAMESE:
+NameError: name 'train_eval_strong_neumf' is not defined
+2026-02-18 13:22:16,068 INFO ===== FOLD 5 =====
+2026-02-18 13:22:21,901 INFO Baseline acc=0.4070, f1=0.2584
+2026-02-18 13:22:21,902 INFO Loading cached arrays for fold 5
+2026-02-18 13:22:21,951 INFO [Logistic] starting fit (fold 5)
+2026-02-18 13:23:27,439 INFO [Logistic] finished fit in 65.5s
+2026-02-18 13:23:27,467 INFO Logistic        acc=0.4238 f1=0.3508 total_time=65.5s
+2026-02-18 13:23:27,492 INFO [SGD_Log] starting fit (fold 5)
+2026-02-18 13:23:32,445 INFO [SGD_Log] finished fit in 5.0s
+2026-02-18 13:23:32,473 INFO SGD_Log         acc=0.3952 f1=0.3352 total_time=5.0s
+2026-02-18 13:23:32,499 INFO [ComplementNB] starting fit (fold 5)
+2026-02-18 13:23:32,549 INFO [ComplementNB] finished fit in 0.0s
+2026-02-18 13:23:32,564 INFO ComplementNB    acc=0.2736 f1=0.1984 total_time=0.1s
+2026-02-18 13:23:32,596 INFO [KNN] starting fit (fold 5)
+2026-02-18 13:23:36,868 INFO [KNN] finished fit in 4.3s
+2026-02-18 13:23:36,878 INFO KNN             acc=0.3543 f1=0.3254 total_time=4.3s
+2026-02-18 13:23:37,074 INFO [LinearSVC] starting fit (fold 5)
+2026-02-18 13:23:54,945 INFO [LinearSVC] finished fit in 17.9s
+2026-02-18 13:23:54,957 INFO LinearSVC       acc=0.4159 f1=0.3073 total_time=17.9s
+2026-02-18 13:23:54,970 INFO RandomForest: using saved best_params from saved_models_no_meta/best_params_RandomForest.json
+2026-02-18 13:23:54,970 INFO [RandomForest] starting fit (fold 5)
+2026-02-18 13:25:16,571 INFO [RandomForest] finished fit in 81.6s
+2026-02-18 13:25:16,585 INFO RandomForest    acc=0.4330 f1=0.3899 total_time=81.6s
+2026-02-18 13:25:19,583 INFO [ExtraTrees] starting fit (fold 5)
+2026-02-18 13:25:24,613 INFO [ExtraTrees] finished fit in 5.0s
+2026-02-18 13:25:24,628 INFO ExtraTrees      acc=0.4333 f1=0.3780 total_time=5.1s
+2026-02-18 13:25:31,810 INFO [MLP] starting fit (fold 5)
+2026-02-18 13:29:24,061 INFO [MLP] finished fit in 232.3s
+2026-02-18 13:29:24,076 INFO MLP             acc=0.3406 f1=0.3186 total_time=232.3s
+2026-02-18 13:29:24,099 INFO [XGBoost] starting fit (fold 5)
+2026-02-18 13:29:31,757 INFO [XGBoost] finished fit in 7.7s
+2026-02-18 13:29:31,768 INFO XGBoost         acc=0.4347 f1=0.3984 total_time=7.7s
+2026-02-18 13:29:31,788 INFO LightGBM: using saved best_params from saved_models_no_meta/best_params_LightGBM.json
+2026-02-18 13:29:31,788 INFO [LightGBM] starting fit (fold 5)
+2026-02-18 13:29:36,545 INFO [LightGBM] finished fit in 4.8s
+2026-02-18 13:29:36,558 INFO LightGBM        acc=0.4421 f1=0.3859 total_time=4.8s
+2026-02-18 13:29:36,588 INFO [CatBoost] starting fit (fold 5)
+2026-02-18 13:29:43,202 INFO [CatBoost] finished fit in 6.6s
+2026-02-18 13:29:43,213 INFO CatBoost        acc=0.4284 f1=0.3835 total_time=6.6s
+2026-02-18 13:29:50,508 INFO NeuralCF acc=0.4198 f1=0.3590
+2026-02-18 13:29:50,508 ERROR TF model training error: name 'train_eval_strong_neumf' is not defined
+Traceback (most recent call last):
+  File "/mnt/drive/aditya22040/god5/arr_ass2.py", line 581, in run_all
+    records.append({'model':'SiameseCF','fold':fold,'accuracy':metrics_siam['accuracy'],'f1_macro':metrics_siam['f1_macro']})
+NameError: name 'train_eval_strong_neumf' is not defined
+2026-02-18 13:29:50,510 INFO Saved per-fold metrics to ml100k_per_fold_metrics_no_meta.csv
+2026-02-18 13:29:50,510 INFO === AVERAGE SCORES ACROSS FOLDS ===
+2026-02-18 13:29:50,511 INFO Baseline         acc=0.4074  f1_macro=0.2668  prec_macro=nan  rec_macro=nan
+2026-02-18 13:29:50,511 INFO CatBoost         acc=0.4350  f1_macro=0.3951  prec_macro=0.4299540946474282  rec_macro=0.38161539691853025
+2026-02-18 13:29:50,511 INFO ComplementNB     acc=0.2736  f1_macro=0.1875  prec_macro=0.2079036036749812  rec_macro=0.2422645060427498
+2026-02-18 13:29:50,512 INFO ExtraTrees       acc=0.4411  f1_macro=0.3900  prec_macro=0.44496944279743067  rec_macro=0.37297279613220014
+2026-02-18 13:29:50,512 INFO KNN              acc=0.3532  f1_macro=0.3280  prec_macro=0.343602343328013  rec_macro=0.33433316192132423
+2026-02-18 13:29:50,513 INFO LightGBM         acc=0.4478  f1_macro=0.3926  prec_macro=0.44934422702958454  rec_macro=0.37832740449373553
+2026-02-18 13:29:50,513 INFO LinearSVC        acc=0.4231  f1_macro=0.3205  prec_macro=0.39673912046452015  rec_macro=0.32436570036531737
+2026-02-18 13:29:50,513 INFO Logistic         acc=0.4312  f1_macro=0.3616  prec_macro=0.4260900837240299  rec_macro=0.3520061596654771
+2026-02-18 13:29:50,514 INFO MLP              acc=0.3421  f1_macro=0.3233  prec_macro=0.33925525917940486  rec_macro=0.34506607818506047
+2026-02-18 13:29:50,514 INFO NeuralCF         acc=0.4210  f1_macro=0.3014  prec_macro=nan  rec_macro=nan
+2026-02-18 13:29:50,515 INFO RandomForest     acc=0.4428  f1_macro=0.4014  prec_macro=0.4345735288393563  rec_macro=0.38702437967682457
+2026-02-18 13:29:50,515 INFO SGD_Log          acc=0.4061  f1_macro=0.3370  prec_macro=0.3986080146753757  rec_macro=0.32906850477531907
+2026-02-18 13:29:50,515 INFO XGBoost          acc=0.4400  f1_macro=0.4034  prec_macro=0.43401625576471947  rec_macro=0.38934283560454463
+2026-02-18 13:29:50,516 INFO Saved aggregated model averages
+2026-02-18 13:29:50,516 INFO Done.
